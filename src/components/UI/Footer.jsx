@@ -54,7 +54,7 @@ export const Footers = () => {
                 </li>
                 <li>
                   <NavLink 
-                    to=""
+                    to="https://github.com/ZakariyaShaikh/Explore-The-World"
                     target="_blank"
                   >
                     Source Code
