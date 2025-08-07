@@ -1,0 +1,17 @@
+[
+  {
+    "icon": "MdPlace",
+    "title": "Find us",
+    "details": "Ahmedaabad"
+  },
+  {
+    "icon": "IoCallSharp",
+    "title": "Call us",
+    "details": "8200975085"
+  },
+  {
+    "icon": "TbMailPlus",
+    "title": "Mail us",
+    "details": "zakariyashaikh@gmail.com"
+  }
+]
