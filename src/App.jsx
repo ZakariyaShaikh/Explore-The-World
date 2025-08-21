@@ -1,6 +1,7 @@
 
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, useLocation } from "react-router-dom";
 import { AppLayout } from "./components/Layout/AppLayout";
+import ReactGA from "react-ga4";
 
 import "./App.css";
 
@@ -10,6 +11,21 @@ import { Country } from "./pages/Country";
 import { Contact } from "./pages/Contact";
 import { ErrorPage } from "./pages/ErrorPage";
 import { CountryDetails } from "./components/Layout/CountryDetails";
+
+const AnalyticsTracker = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    // Send pageview on route change
+    ReactGA.send({
+      hitType: "pageview",
+      page: location.pathname + location.search,
+    });
+  }, [location]);
+
+  return null;
+};
+
 
 const router = createBrowserRouter([
   {
