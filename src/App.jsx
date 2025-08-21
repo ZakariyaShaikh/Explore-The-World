@@ -58,6 +58,7 @@ const router = createBrowserRouter([
 ]);
 
 const App = () => {
+     <AnalyticsTracker />
   return <RouterProvider router={router}> </RouterProvider>;
 };
 
