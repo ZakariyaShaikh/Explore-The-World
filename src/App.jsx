@@ -11,6 +11,7 @@ import { Country } from "./pages/Country";
 import { Contact } from "./pages/Contact";
 import { ErrorPage } from "./pages/ErrorPage";
 import { CountryDetails } from "./components/Layout/CountryDetails";
+import { useEffect } from "react";
 
 const AnalyticsTracker = () => {
   const location = useLocation();
@@ -58,8 +59,13 @@ const router = createBrowserRouter([
 ]);
 
 const App = () => {
-     <AnalyticsTracker />
-  return <RouterProvider router={router}> </RouterProvider>;
+     
+  return (
+    <>
+    <AnalyticsTracker />
+    <RouterProvider router={router}> </RouterProvider>;
+    </>
+  ) 
 };
 
 export default App;
