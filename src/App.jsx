@@ -59,13 +59,15 @@ const router = createBrowserRouter([
 ]);
 
 const App = () => {
-     
+
   return (
     <>
-    <AnalyticsTracker />
-    <RouterProvider router={router}> </RouterProvider>;
+
+      <RouterProvider router={router}>
+        <AnalyticsTracker />
+      </RouterProvider>;
     </>
-  ) 
+  )
 };
 
 export default App;
