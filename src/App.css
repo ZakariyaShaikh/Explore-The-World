@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -130,7 +129,7 @@ nav ul {
   & li a {
     color: #fff;
     list-style: none;
-    text-decoration: none ;
+    text-decoration: none;
   }
 }
 
@@ -359,6 +358,7 @@ ul {
   margin: 0px;
   padding: 0px;
 }
+
 .footer-section {
   background: #151414;
   position: relative;
@@ -368,22 +368,27 @@ ul {
   background: #202020;
   padding: 25px 0;
 }
+
 .copyright-text p {
   margin: 0;
   font-size: 14px;
   color: #878787;
 }
+
 .copyright-text p a {
   color: #3a4ed5;
   margin-left: 0.6rem;
 }
+
 .footer-menu li {
   display: inline-block;
   margin-left: 20px;
 }
+
 .footer-menu li:hover a {
   color: #3a4ed5;
 }
+
 .footer-menu li a {
   font-size: 14px;
   color: #878787;
@@ -397,8 +402,10 @@ country Card
 .country-card {
   margin-top: 3.2rem;
 }
+
 .country-section {
   margin: 6.4rem auto 9.6rem auto;
+
   & .grid {
     gap: 2.2rem;
     max-width: 110rem;
@@ -446,6 +453,7 @@ country Card
     justify-content: flex-end;
   }
 }
+
 /* serach-section */
 .section-searchFilter {
   width: 100%;
@@ -453,10 +461,32 @@ country Card
   align-items: center;
   justify-content: space-between;
   margin-bottom: 3.2rem;
+  flex-wrap: wrap;
 
   & .container-card {
     padding: 0.8rem 2.4rem;
     background: linear-gradient(71deg, #080509, #1a171c, #080509);
+  }
+
+  @media (max-width: 768px) {
+    .section-searchFilter {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 1rem;
+      /* gap between elements */
+    }
+
+    .section-searchFilter input,
+    .section-searchFilter button,
+    .section-searchFilter .select-section {
+      width: 100%;
+      /* full width */
+      max-width: 100%;
+    }
+
+    .section-searchFilter button {
+      display: block;
+    }
   }
 
   & input {
@@ -494,7 +524,7 @@ country Card
     }
   }
 
-  & .select-section > option {
+  & .select-section>option {
     background-color: #080509;
     color: rgba(255, 255, 255, 0.8);
     padding: 0.6rem 2.4rem;
@@ -521,6 +551,7 @@ contact us page
     border-color: rgba(255, 255, 255, 0.6);
   }
 }
+
 .contact-wrapper {
   display: flex;
   justify-content: center;
@@ -567,6 +598,7 @@ contact us Page ends here
 }
 
 @media screen and (max-width: 760px) {
+
   .grid-four-cols,
   .grid-three-cols,
   .grid-two-cols {
@@ -593,6 +625,7 @@ contact us Page ends here
   mask-composite: subtract;
   animation: l3 1s infinite linear;
 }
+
 @keyframes l3 {
   to {
     transform: rotate(1turn);
@@ -606,6 +639,6 @@ contact us Page ends here
   align-items: center;
 }
 
-.nav-link a{
-  text-decoration:none;
+.nav-link a {
+  text-decoration: none;
 }
